@@ -33,7 +33,7 @@ public class SendRequest {
 
         // We use the WalletAppKit that handles all the boilerplate for us. Have a look at the Kit.java example for more details.
         NetworkParameters params = TestNet3Params.get();
-        WalletAppKit kit = new WalletAppKit(params, new File("."), "sendrequest-example");
+        WalletAppKit kit = new WalletAppKit(params, new File("."), "walletappkit-example");
         kit.startAsync();
         kit.awaitRunning();
 
@@ -46,7 +46,7 @@ public class SendRequest {
 
         // To which address you want to send the coins?
         // The Address class represents a Bitcoin address.
-        Address to = Address.fromBase58(params, "mupBAFeT63hXfeeT4rnAUcpKHDkz1n4fdw");
+        Address to = Address.fromBase58(params, "n2eMqTT929pb1RDNuqEnxdaLau1rxy3efi");
 
         // There are different ways to create and publish a SendRequest. This is probably the easiest one.
         // Have a look at the code of the SendRequest class to see what's happening and what other options you have: https://bitcoinj.github.io/javadoc/0.11/com/google/bitcoin/core/Wallet.SendRequest.html
